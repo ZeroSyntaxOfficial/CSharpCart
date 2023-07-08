@@ -1,8 +1,8 @@
 # ZeroCart
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/ZeroCart/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/your-username/ZeroCart)](https://github.com/your-username/ZeroCart/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/your-username/ZeroCart)](https://github.com/your-username/ZeroCart/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ZeroSyntaxOfficial/ZeroCart/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/ZeroSyntaxOfficial/ZeroCart)](https://github.com/ZeroSyntaxOfficial/ZeroCart/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/ZeroSyntaxOfficial/ZeroCart)](https://github.com/ZeroSyntaxOfficial/ZeroCart/pulls)
 
 ZeroCart is a simple and lightweight C#.NET-based e-commerce platform built following the MVC pattern. It provides a basic and intuitive solution for setting up an online store, allowing users to manage products, orders, and customers in a user-friendly manner. 
 
