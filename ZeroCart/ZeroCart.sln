@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroCartWeb", "ZeroCartWeb\ZeroCartWeb.csproj", "{48D15974-05E6-4BB9-931A-E00D6CA0D1C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroCart", "ZeroCart.csproj", "{3F867A88-7C2E-4904-AB83-81D72F38DBF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48D15974-05E6-4BB9-931A-E00D6CA0D1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48D15974-05E6-4BB9-931A-E00D6CA0D1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48D15974-05E6-4BB9-931A-E00D6CA0D1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48D15974-05E6-4BB9-931A-E00D6CA0D1C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F867A88-7C2E-4904-AB83-81D72F38DBF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F867A88-7C2E-4904-AB83-81D72F38DBF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F867A88-7C2E-4904-AB83-81D72F38DBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F867A88-7C2E-4904-AB83-81D72F38DBF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D4BB9091-60EB-4EF2-B2EE-78B187EBFC12}
+		SolutionGuid = {918DA556-4DB3-4436-9A20-979186419C8E}
 	EndGlobalSection
 EndGlobal
