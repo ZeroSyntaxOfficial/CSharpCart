@@ -50,13 +50,6 @@ ZeroCart is released under the [MIT License](LICENSE).
 
 For any questions or issues, please [open an issue](https://github.com/ZeroSyntaxOfficial/ZeroCart/issues) on GitHub.
 
-## Acknowledgments
-
-We would like to express our gratitude to the following contributors for their valuable contributions to ZeroCart:
-
-- Liakat Hossain (@liakat89)
-- Azizul Hakim (@azizulhakim13)
-
 Thank you for your interest in ZeroCart! We look forward to your contributions and feedback.
 
 [![Built with Love](http://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/liakat89/)
