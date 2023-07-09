@@ -14,7 +14,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();//this is to reload view without project restart. nuget librery required to be installed is: Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
