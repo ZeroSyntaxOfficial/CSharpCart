@@ -2,7 +2,315 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome back</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-5">
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="img-fluid w-100" src="./images/hero-1.jpg" alt="hero">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="img-fluid w-100" src="./images/hero-2.jpg" alt="hero">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="img-fluid w-100" src="./images/hero-3.jpg" alt="hero">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center text-lg-end">
+                <div class="swiper promoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="h-100 w-100" src="./images/hero-side-1.jpg" alt="promo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="h-100 w-100" src="./images/hero-side-2.jpg" alt="promo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="category-section bg-light py-5">
+    <div class="container">
+        <div class="title text-center pb-3">
+            <h2 class="display-6 text-primary fw-semibold">Featured Category</h2>
+            <p class="lead">From our featured category, you can get the product that you want !</p>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-1.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-2.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-3.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-4.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-5.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-6.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-7.png" alt="category">
+                    </a>
+                </div>
+            </div>
+             <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-8.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-9.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-10.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-11.png" alt="category">
+                    </a>
+                </div>
+            </div>
+                        <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-12.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-13.png" alt="category">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="inner">
+                    <a href="#">
+                        <img src="./images/category/category-14.png" alt="category">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-3 pt-5">
+            <div class="col-md-6">
+                <div class="feature-image">
+                    <a href="#"><img class="img-fluid" src="./images/feature-1.jpg" /></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-image">
+                    <a href="#"><img class="img-fluid" src="./images/feature-2.jpg" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="new-product bg-light pb-5">
+    <div class="container">
+        <div class="top d-flex justify-content-between rounded shadow p-3">
+            <p class="fw-semibold mb-0">New Arrival</p>
+            <a class="text-info" href="#">View All</a>
+        </div>
+
+        <div class="row mt-3 g-3">
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-1.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-2.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-3.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-4.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-5.png" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-6.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-7.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-8.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-9.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-10.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-11.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inner text-center shadow">
+                    <div class="image">
+                        <a href="#"><img class="img-fluid" src="./images/offers/product-12.jpg" /></a>
+                    </div>
+                    <div>
+                        <a class="text" href="#"><p class="fw-semibold mb-0 py-2">1MORE Piston Fit Bluetooth In-Ear Ea</p></a>
+                        <p class="text-danger">680.00৳ <span class="ps-2">780.00৳</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

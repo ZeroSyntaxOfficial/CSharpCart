@@ -4,47 +4,356 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ZeroCart</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/all.min.css asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/swiper.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ZeroCart.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ZeroCart</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
+        <div class="topbar py-3">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-between align-items-center gy-3">
+                    <div class="col-lg-1">
+                        <a class="fs-4 text-white fw-bolder" href="#">ZeroCart</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <form class='d-flex'>
+                            <span class='pt-2'><a class="text-dark" href="#"><i class="fa-solid fa-magnifying-glass position-absolute ms-4"></i></a></span>
+                            <input type="email" class="form-control ps-5 py-1" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </form>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="d-flex justify-content-lg-end">
+                            <div class="icon">
+                                <a href="#"><i class="fa-regular fa-user"></i></a>
+                            </div>
+                            <div class="icon mx-2">
+                                <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-cart-plus"></i><span class="ps-1">0</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-none d-xl-flex justify-content-lg-end gap-3">
+                            <a class="btn btn-outline-light" href="#"><i class="fa-solid fa-gift pe-1"></i>Smart Offer</a>
+                            <a class="btn btn-danger" href="#">Smart Offer</a>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <nav class="mobile-header navbar custom-toggler navbar-expand-xl d-flex d-xl-none align-items-center" data-bs-theme="light">
+                                <div class="container py-30">
+                                    <!-- <a class="navbar-brand d-flex align-items-center me-0" href="home-1.html"></a> -->
+                                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                                    <button class="navbar-toggler me-0" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#navEndoffcanvas" aria-controls="navEndoffcanvas" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+
+        <div id="navbar_top" class="nav-bar shadow">
+            <nav class="container navbar navbar-expand-xl">
+                <div class="offcanvas offcanvas-end offcanvas-xl" id="navEndoffcanvas" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title fs-3 fw-semibold" id="offcanvasNavbarLabel">Zerocart</a>
+                        <div data-bs-theme="light">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="offcanvas-body align-items-center">
+                        <ul class="navbar-nav flex-wrap">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Desktop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="home-1.html">Home 1</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                                    <li><a class="dropdown-item" href="home-3.html">Home 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="about-us.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Laptop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about-us.html">About Us 1</a></li>
+                                    <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="our-services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Component
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="our-services.html">Services 1</a></li>
+                                    <li><a class="dropdown-item" href="our-services-2.html">Services 2</a></li>
+                                    <li><a class="dropdown-item" href="our-services-3.html">Services Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="case-studies.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Monitor
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="case-studies.html">CaseStudies 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="case-studies-2.html">CaseStudies 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="case-studies-3.html">CaseStudies 3</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="case-studies-4.html">Casestudies Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ups
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="resources-1.html">Resources</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="resources-details.html">Resources Details</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="pricing.html">
+                                    Office Equipment
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Camera
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Security
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Networking
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Accessories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gaming
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Software
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mobile
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gadget
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    AC
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Refrigerator
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    TV
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home Appliances
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
+                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer py-5">
         <div class="container">
-            &copy; 2023 - ZeroCart - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+                <div class="col-xl-4">
+                    <div class="footer-widget-1">
+                        <a class="text-white fs-1" href="#">ZeroCart</a>
+                        <p class="text-white pt-3">ZeroCart Computer and Electronics is the largest computer's, Electronics and mobiles retail & Online shop in Bangladesh. with best prices on Desktops, Laptops, Gaming PC, Component, Accessories, Gadgets & more</p>
+                        <p class="fs-5 text-white mb-0 fw-semibold">Working Days/Hours:</p>
+                        <p class="text-white"> Mon - Sun  (9.00 AM - 8.00 PM)</p>
+                        <p class="fs-5 text-danger mb-0 fw-semibold">Hotline:</p>
+                        <p class="text-white">+88 09696114834</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-widget-2">
+                        <p class="fs-5 fw-semibold color-blue">Call Us 24/7</p>
+                        <ul class="list-unstyled">
+                            <li class="text-white">+8801318 300 501 - 14(sell)</li>
+                            <li class="text-white">+8801318 300 516 - 19 (electronics)</li>
+                            <li class="text-white">+8801318 300 521 (service)</li>
+                            <li class="text-white">+8801318 300 522 (RMA)</li>
+                            <li class="text-white">+8801318 300 524 - 27 (Mobile)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-widget-2">
+                        <p class="fs-5 color-blue fw-semibold">Customer Service</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Payments Terms</a></li>
+                            <li><a href="#">EMI Terms</a></li>
+                            <li><a href="#">Return and refund Policy</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">ডিজিটাল কমার্স নির্দেশিকা ২০২১</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-widget-2">
+                        <p class="fs-5 color-blue fw-semibold">Information</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-widget-2">
+                        <p class="fs-5 fw-semibold color-blue">Contact Us</p>
+                        <ul class="list-unstyled">
+                            <li><p class="text-white">Shp no-14, 15, Red crisent Plaza, Alipur, Faridpur, 7800, Bangladesh</p></li>
+                            <li class="fs-5 fw-semibold color-blue">Email Us:</li>
+                            <li class="text-white">info@smartview.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-white mb-0">© Copyright 2023 ZeroCart. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a class="text-white" href="#">Terms & Conditions</a>
+                    <a class="vr text-white mx-3"></a>
+                    <a class="text-white" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/swiper.min.js" asp-append-version="true"></script>
+    <script src="~/js/all.min.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
