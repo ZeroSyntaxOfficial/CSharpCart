@@ -18,6 +18,31 @@ namespace ZeroCart.Controllers
             return View();
         }
 
+        public IActionResult CategoryProducts()
+        {
+            return View();
+        }
+
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
+
+        public IActionResult DashBoard()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Signup()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
