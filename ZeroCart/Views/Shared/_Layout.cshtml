@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zerocart: Opensourced E-commerce template">
     <title>@ViewData["Title"] - ZeroCart</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
@@ -12,19 +13,19 @@
 </head>
 <body>
     <header>
-        <div class="topbar py-3">
+        <div class="topbar py-lg-3">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-between align-items-center gy-3">
                     <div class="col-lg-1">
                         <a class="fs-4 text-white fw-bolder" href="#">ZeroCart</a>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 d-none d-lg-flex">
                         <form class='d-flex'>
                             <span class='pt-2'><a class="text-dark" href="#"><i class="fa-solid fa-magnifying-glass position-absolute ms-4"></i></a></span>
                             <input type="email" class="form-control ps-5 py-1" id="exampleFormControlInput1" placeholder="name@example.com">
                         </form>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 d-none d-lg-flex">
                         <div class="d-flex justify-content-lg-end">
                             <div class="icon">
                                 <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -63,8 +64,8 @@
         <div id="navbar_top" class="nav-bar shadow">
             <nav class="container navbar navbar-expand-xl">
                 <div class="offcanvas offcanvas-end offcanvas-xl" id="navEndoffcanvas" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <a class="offcanvas-title fs-3 fw-semibold" id="offcanvasNavbarLabel">Zerocart</a>
+                    <div class="offcanvas-header bg-light">
+                        <a class="offcanvas-title fs-3 fw-semibold" id="offcanvasNavbarLabel" href="#">Zerocart</a>
                         <div data-bs-theme="light">
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
@@ -73,188 +74,793 @@
                     <div class="offcanvas-body align-items-center">
                         <ul class="navbar-nav flex-wrap">
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Desktop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="home-1.html">Home 1</a>
+                                    <li><a class="dropdown-item" href="#">Special PC</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Smart PC</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Intel</a></li>
+                                            <li><a class="dropdown-item" href="#">Ryzen</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
-                                    <li><a class="dropdown-item" href="home-3.html">Home 3</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Gaming PC
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Intel</a></li>
+                                            <li><a class="dropdown-item" href="#">Ryzen</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Brand PC
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Acer</a></li>
+                                            <li><a class="dropdown-item" href="#">Dell</a></li>
+                                            <li><a class="dropdown-item" href="#">Asus</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">All In one PC</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Portable Mini PC
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Asus</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Apple Mac Mini</a></li>
+                                    <li><a class="dropdown-item" href="#">Apple iMac</a></li>
+                                    <li><a class="dropdown-item" href="#">Budget PC</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="about-us.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Laptop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about-us.html">About Us 1</a></li>
-                                    <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Laptop</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Acer</a></li>
+                                            <li><a class="dropdown-item" href="#">Asus</a></li>
+                                            <li><a class="dropdown-item" href="#">Dell</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                            <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                                            <li><a class="dropdown-item" href="#">MSI</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Gaming Laptop</a></li>
+                                    <li><a class="dropdown-item" href="#">Prmium Notebook</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Laptop Bag
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Laptop Accessories
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Laptop Cooler</a></li>
+                                            <li><a class="dropdown-item" href="#">Caddy</a></li>
+                                            <li><a class="dropdown-item" href="#">Charger/Adapter</a></li>
+                                            <li><a class="dropdown-item" href="#">Battery</a></li>
+                                            <li><a class="dropdown-item" href="#">Display</a></li>
+                                            <li><a class="dropdown-item" href="#">Keyboard</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="our-services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Component
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-services.html">Services 1</a></li>
-                                    <li><a class="dropdown-item" href="our-services-2.html">Services 2</a></li>
-                                    <li><a class="dropdown-item" href="our-services-3.html">Services Details</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Processor</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Intel</a></li>
+                                            <li><a class="dropdown-item" href="#">AMD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            CPU Cooler
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Cooler Master</a></li>
+                                            <li><a class="dropdown-item" href="#">Dep Cool</a></li>
+                                            <li><a class="dropdown-item" href="#">Acer</a></li>
+                                            <li><a class="dropdown-item" href="#">Aptech</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Motherboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Asus(Intel)</a></li>
+                                            <li><a class="dropdown-item" href="#">Asus(Ryzen)</a></li>
+                                            <li><a class="dropdown-item" href="#">Gigabyte(Intel)</a></li>
+                                            <li><a class="dropdown-item" href="#">Gigabyte(Ryzen)</a></li>
+                                            <li><a class="dropdown-item" href="#">Afox</a></li>
+                                            <li><a class="dropdown-item" href="#">MSI(Intel)</a></li>
+                                            <li><a class="dropdown-item" href="#">MSI(Ryzen)</a></li>
+                                            <li><a class="dropdown-item" href="#">ASRock(Intel)</a></li>
+                                            <li><a class="dropdown-item" href="#">ASRock(Ryzen)</a></li>
+                                            <li><a class="dropdown-item" href="#">Esonic</a></li>
+                                            <li><a class="dropdown-item" href="#">Udore</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Graphics Card
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Asus</a></li>
+                                            <li><a class="dropdown-item" href="#">Gigabyte</a></li>
+                                            <li><a class="dropdown-item" href="#">MSI</a></li>
+                                            <li><a class="dropdown-item" href="#">ZOTAC</a></li>
+                                            <li><a class="dropdown-item" href="#">Colorful</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            RAM(Desktop)
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Adata</a></li>
+                                            <li><a class="dropdown-item" href="#">Apacer</a></li>
+                                            <li><a class="dropdown-item" href="#">Corsair</a></li>
+                                            <li><a class="dropdown-item" href="#">Crucial</a></li>
+                                            <li><a class="dropdown-item" href="#">Juhor</a></li>
+                                            <li><a class="dropdown-item" href="#">Kingsmen</a></li>
+                                            <li><a class="dropdown-item" href="#">Ramsta</a></li>
+                                            <li><a class="dropdown-item" href="#">Netac</a></li>
+                                            <li><a class="dropdown-item" href="#">Patriot</a></li>
+                                            <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                            <li><a class="dropdown-item" href="#">Team</a></li>
+                                            <li><a class="dropdown-item" href="#">Transcend</a></li>
+                                            <li><a class="dropdown-item" href="#">Xter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            RAM(Laptop)
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Apacer</a></li>
+                                            <li><a class="dropdown-item" href="#">Adata</a></li>
+                                            <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                            <li><a class="dropdown-item" href="#">Team</a></li>
+                                            <li><a class="dropdown-item" href="#">Transcend</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Power Supply
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Antec</a></li>
+                                            <li><a class="dropdown-item" href="#">Deep cool</a></li>
+                                            <li><a class="dropdown-item" href="#">Golden Field</a></li>
+                                            <li><a class="dropdown-item" href="#">Hi Power</a></li>
+                                            <li><a class="dropdown-item" href="#">Value Up</a></li>
+                                            <li><a class="dropdown-item" href="#">Cooler Master</a></li>
+                                            <li><a class="dropdown-item" href="#">Corsair</a></li>
+                                            <li><a class="dropdown-item" href="#">Dell</a></li>
+                                            <li><a class="dropdown-item" href="#">Gamdios</a></li>
+                                            <li><a class="dropdown-item" href="#">Gygabite</a></li>
+                                            <li><a class="dropdown-item" href="#">Gygasonic</a></li>
+                                            <li><a class="dropdown-item" href="#">Ovo</a></li>
+                                            <li><a class="dropdown-item" href="#">Platinum</a></li>
+                                            <li><a class="dropdown-item" href="#">Thurmaltake</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Hard Disk Drive
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Seagate</a></li>
+                                            <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                                            <li><a class="dropdown-item" href="#">Transcend</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Digital</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">SSD</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Casing
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Antec</a></li>
+                                            <li><a class="dropdown-item" href="#">Golden Field</a></li>
+                                            <li><a class="dropdown-item" href="#">Apollo</a></li>
+                                            <li><a class="dropdown-item" href="#">Aptech</a></li>
+                                            <li><a class="dropdown-item" href="#">Blackbuck</a></li>
+                                            <li><a class="dropdown-item" href="#">Cooler Master</a></li>
+                                            <li><a class="dropdown-item" href="#">Corsair</a></li>
+                                            <li><a class="dropdown-item" href="#">Delux</a></li>
+                                            <li><a class="dropdown-item" href="#">Gygabyte</a></li>
+                                            <li><a class="dropdown-item" href="#">Gygatech</a></li>
+                                            <li><a class="dropdown-item" href="#">Max Green</a></li>
+                                            <li><a class="dropdown-item" href="#">Nzxt</a></li>
+                                            <li><a class="dropdown-item" href="#">OVO</a></li>
+                                            <li><a class="dropdown-item" href="#">Safeway</a></li>
+                                            <li><a class="dropdown-item" href="#">Value-Top</a></li>
+                                            <li><a class="dropdown-item" href="#">Xtreme</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Portable Hard Disk Drive
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Digital</a></li>
+                                            <li><a class="dropdown-item" href="#">Transcend</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Portable SSD</a></li>
+                                    <li><a class="dropdown-item" href="#">Casing Cooler</a></li>
+                                    <li><a class="dropdown-item" href="#">Sound Card</a></li>
+                                    <li><a class="dropdown-item" href="#">Optical Drives</a></li>
+                                    <li><a class="dropdown-item" href="#">Voltage Stabilizer</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="case-studies.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Monitor
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="case-studies.html">CaseStudies 1</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="case-studies-2.html">CaseStudies 2</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="case-studies-3.html">CaseStudies 3</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="case-studies-4.html">Casestudies Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Huwawei</a></li>
+                                    <li><a class="dropdown-item" href="#">BenQ</a></li>
+                                    <li><a class="dropdown-item" href="#">LG</a></li>
+                                    <li><a class="dropdown-item" href="#">HP</a></li>
+                                    <li><a class="dropdown-item" href="#">AOC</a></li>
+                                    <li><a class="dropdown-item" href="#">Dell</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                                    <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="#">Philips</a></li>
+                                    <li><a class="dropdown-item" href="#">Gigasonic</a></li>
+                                    <li><a class="dropdown-item" href="#">Hi Power</a></li>
+                                    <li><a class="dropdown-item" href="#">Curved Monitor</a></li>
+                                    <li><a class="dropdown-item" href="#">4k Monitor</a></li>
+                                    <li><a class="dropdown-item" href="#">Gaming Monitor</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ups
+                                    UPS
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="resources-1.html">Resources</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="resources-details.html">Resources Details</a>
+                                    <li><a class="dropdown-item" href="#">Online UPS</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Offline UPS</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Digital X </a></li>
+                                            <li><a class="dropdown-item" href="#">Powerguard</a></li>
+                                            <li><a class="dropdown-item" href="#">Toggi</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            UPS Battery
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">High Power</a></li>
+                                            <li><a class="dropdown-item" href="#">Real Power</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">IPS</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item position-relative">
-                                <a class="nav-link" href="pricing.html">
-                                    Office Equipment
-                                </a>
-                            </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Office Equipement
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">IP Phone</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projector</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Maxell</a></li>
+                                            <li><a class="dropdown-item" href="#">Projection Screen</a></li>
+                                            <li><a class="dropdown-item" href="#">Projector Mount</a></li>
+                                            <li><a class="dropdown-item" href="#">Projector Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Printer
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Brother</a></li>
+                                            <li><a class="dropdown-item" href="#">Canon</a></li>
+                                            <li><a class="dropdown-item" href="#">Epson</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Photocopier
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Sharp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Toner
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Acc</a></li>
+                                            <li><a class="dropdown-item" href="#">Anpoll</a></li>
+                                            <li><a class="dropdown-item" href="#">Anycolor</a></li>
+                                            <li><a class="dropdown-item" href="#">Aptech</a></li>
+                                            <li><a class="dropdown-item" href="#">Astrum</a></li>
+                                            <li><a class="dropdown-item" href="#">Canon</a></li>
+                                            <li><a class="dropdown-item" href="#">DG</a></li>
+                                            <li><a class="dropdown-item" href="#">Eurex</a></li>
+                                            <li><a class="dropdown-item" href="#">Euro</a></li>
+                                            <li><a class="dropdown-item" href="#">Fastprint</a></li>
+                                            <li><a class="dropdown-item" href="#">Greenforce</a></li>
+                                            <li><a class="dropdown-item" href="#">Katun</a></li>
+                                            <li><a class="dropdown-item" href="#">Pantun</a></li>
+                                            <li><a class="dropdown-item" href="#">Power Print</a></li>
+                                            <li><a class="dropdown-item" href="#">Printex</a></li>
+                                            <li><a class="dropdown-item" href="#">Richo</a></li>
+                                            <li><a class="dropdown-item" href="#">Sharp</a></li>
+                                            <li><a class="dropdown-item" href="#">Smart Nor</a></li>
+                                            <li><a class="dropdown-item" href="#">Smart Print</a></li>
+                                            <li><a class="dropdown-item" href="#">Starex</a></li>
+                                            <li><a class="dropdown-item" href="#">T-Print</a></li>
+                                            <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                                            <li><a class="dropdown-item" href="#">Visa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cartridge
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Brother</a></li>
+                                            <li><a class="dropdown-item" href="#">Canon</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Ink Bottle</a></li>
+                                    <li><a class="dropdown-item" href="#">Ribbon</a></li>
+                                    <li><a class="dropdown-item" href="#">Printer Drum</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Scanner
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Avision</a></li>
+                                            <li><a class="dropdown-item" href="#">Canon</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Barcode Scanner
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Tysso</a></li>
+                                            <li><a class="dropdown-item" href="#">Astrum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Telephone Set
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Huwawei</a></li>
+                                            <li><a class="dropdown-item" href="#">Panasonic</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">PABX System</a></li>
+                                    <li><a class="dropdown-item" href="#">BLower</a></li>
+                                    <li><a class="dropdown-item" href="#">Money Counter Machine</a></li>
+                                    <li><a class="dropdown-item" href="#">Laminating Machine</a></li>
+                                    <li><a class="dropdown-item" href="#">Office Accessories</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Camera
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Action Camera</a></li>
+                                    <li><a class="dropdown-item" href="#">DSLR</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Camera</a></li>
+                                    <li><a class="dropdown-item" href="#">Camera Lens</a></li>
+                                    <li><a class="dropdown-item" href="#">Tripod & Stand</a></li>
+                                    <li><a class="dropdown-item" href="#">Camera Accessories</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Security
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Access Control</a></li>
+                                    <li><a class="dropdown-item" href="#">CC Camera</a></li>
+                                    <li><a class="dropdown-item" href="#">IP Camera</a></li>
+                                    <li><a class="dropdown-item" href="#">DVR</a></li>
+                                    <li><a class="dropdown-item" href="#">NVR</a></li>
+                                    <li><a class="dropdown-item" href="#">XVR</a></li>
+                                    <li><a class="dropdown-item" href="#">Hikvision CC Camera Package</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Hikvision IP Camera Package
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Test25</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dahua CC Camera Package</a></li>
+                                    <li><a class="dropdown-item" href="#">Dahua IP Camera Pacakage</a></li>
+                                    <li><a class="dropdown-item" href="#">CC Camera Accessories</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Networking
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Router
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">ASUS</a></li>
+                                            <li><a class="dropdown-item" href="#">Mi</a></li>
+                                            <li><a class="dropdown-item" href="#">D-Link</a></li>
+                                            <li><a class="dropdown-item" href="#">Mercusys</a></li>
+                                            <li><a class="dropdown-item" href="#">Netis</a></li>
+                                            <li><a class="dropdown-item" href="#">Tenda</a></li>
+                                            <li><a class="dropdown-item" href="#">TP-Link</a></li>
+                                            <li><a class="dropdown-item" href="#">Wavlink</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Pocket Router</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Card</a></li>
+                                    <li><a class="dropdown-item" href="#">Lan Cable</a></li>
+                                    <li><a class="dropdown-item" href="#">Fibre Optic Cable & Accessories</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Access Point & Network Extender
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">TP-LInk</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Network Switch</a></li>
+                                    <li><a class="dropdown-item" href="#">Network Accessories</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Networking Tools
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">ONU</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Modem</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Accessories
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Audio Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#">Bluetooth Receiver</a></li>
+                                    <li><a class="dropdown-item" href="#">Monitor Adaptor</a></li>
+                                    <li><a class="dropdown-item" href="#">Keyboard</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Mouse
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">A4 Tech</a></li>
+                                            <li><a class="dropdown-item" href="#">Asus</a></li>
+                                            <li><a class="dropdown-item" href="#">Delux</a></li>
+                                            <li><a class="dropdown-item" href="#">Havit</a></li>
+                                            <li><a class="dropdown-item" href="#">HP</a></li>
+                                            <li><a class="dropdown-item" href="#">IMice</a></li>
+                                            <li><a class="dropdown-item" href="#">Logitech</a></li>
+                                            <li><a class="dropdown-item" href="#">Micropack</a></li>
+                                            <li><a class="dropdown-item" href="#">Rapoo</a></li>
+                                            <li><a class="dropdown-item" href="#">Razer</a></li>
+                                            <li><a class="dropdown-item" href="#">Value-top</a></li>
+                                            <li><a class="dropdown-item" href="#">Xtreme</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Mouse Pad</a></li>
+                                    <li><a class="dropdown-item" href="#">Headphone</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Speaker & Home Theatre
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Astrum</a></li>
+                                            <li><a class="dropdown-item" href="#">Bosch</a></li>
+                                            <li><a class="dropdown-item" href="#">Circle</a></li>
+                                            <li><a class="dropdown-item" href="#">Creative</a></li>
+                                            <li><a class="dropdown-item" href="#">Digital X</a></li>
+                                            <li><a class="dropdown-item" href="#">Edifier</a></li>
+                                            <li><a class="dropdown-item" href="#">Excel</a></li>
+                                            <li><a class="dropdown-item" href="#">F&D</a></li>
+                                            <li><a class="dropdown-item" href="#">Havit</a></li>
+                                            <li><a class="dropdown-item" href="#">Microlab</a></li>
+                                            <li><a class="dropdown-item" href="#">Micropack</a></li>
+                                            <li><a class="dropdown-item" href="#">Perfect</a></li>
+                                            <li><a class="dropdown-item" href="#">X-Lab</a></li>
+                                            <li><a class="dropdown-item" href="#">Xtreme</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Bluetooth Speaker
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Awei</a></li>
+                                            <li><a class="dropdown-item" href="#">Ewa</a></li>
+                                            <li><a class="dropdown-item" href="#">Logitech</a></li>
+                                            <li><a class="dropdown-item" href="#">Micropack</a></li>
+                                            <li><a class="dropdown-item" href="#">Teutons</a></li>
+                                            <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ear Phone
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">1More</a></li>
+                                            <li><a class="dropdown-item" href="#">Awei</a></li>
+                                            <li><a class="dropdown-item" href="#">Extra</a></li>
+                                            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                            <li><a class="dropdown-item" href="#">Oneplus</a></li>
+                                            <li><a class="dropdown-item" href="#">Plextone</a></li>
+                                            <li><a class="dropdown-item" href="#">Qkz</a></li>
+                                            <li><a class="dropdown-item" href="#">Rapoo</a></li>
+                                            <li><a class="dropdown-item" href="#">Realme</a></li>
+                                            <li><a class="dropdown-item" href="#">Remax</a></li>
+                                            <li><a class="dropdown-item" href="#">Teutons</a></li>
+                                            <li><a class="dropdown-item" href="#">Uiisi</a></li>
+                                            <li><a class="dropdown-item" href="#">Wavefun</a></li>
+                                            <li><a class="dropdown-item" href="#">Xiomi/mi</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Webcam</a></li>
+                                    <li><a class="dropdown-item" href="#">Capture Card</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Microphone
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Boya</a></li>
+                                            <li><a class="dropdown-item" href="#">Remax</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Pen Drive</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Memory Card
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                            <li><a class="dropdown-item" href="#">Transcend</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Power Bank</a></li>
+                                    <li><a class="dropdown-item" href="#">Thermal Paste</a></li>
+                                    <li><a class="dropdown-item" href="#">TV Card</a></li>
+                                    <li><a class="dropdown-item" href="#">Converter & Cable</a></li>
+                                    <li><a class="dropdown-item" href="#">HDD-SSD Enclosure</a></li>
+                                    <li><a class="dropdown-item" href="#">Power Strip</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Voice Recorder</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Gaming
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Gamepad</a></li>
+                                    <li><a class="dropdown-item" href="#">RGB Accessories</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Software
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Antivirus
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Eset</a></li>
+                                            <li><a class="dropdown-item" href="#">Kasperesky</a></li>
+                                            <li><a class="dropdown-item" href="#">Norton</a></li>
+                                            <li><a class="dropdown-item" href="#">Panda</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Operating System</a></li>
+                                    <li><a class="dropdown-item" href="#">Office Application</a></li>
+                                    <li><a class="dropdown-item" href="#">Adobe</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Mobile
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">GEO</a></li>
+                                    <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                                    <li><a class="dropdown-item" href="#">Oppo</a></li>
+                                    <li><a class="dropdown-item" href="#">Vivo</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Nokia</a></li>
+                                    <li><a class="dropdown-item" href="#">Realme</a></li>
+                                    <li><a class="dropdown-item" href="#">Infinix</a></li>
+                                    <li><a class="dropdown-item" href="#">Symphony</a></li>
+                                    <li><a class="dropdown-item" href="#">Itel</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Gadget
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart Band</a></li>
+                                    <li><a class="dropdown-item" href="#">TV Box</a></li>
+                                    <li><a class="dropdown-item" href="#">Studio Equipement</a></li>
+                                    <li><a class="dropdown-item" href="#">Mobile Phone Accessories</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     AC
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Media</a></li>
+                                    <li><a class="dropdown-item" href="#">Panasonic</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart</a></li>
+                                    <li><a class="dropdown-item" href="#">General</a></li>
+                                    <li><a class="dropdown-item" href="#">Gree</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Refrigerator
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Jamuna</a></li>
+                                    <li><a class="dropdown-item" href="#">Panasonic</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Sharp</a></li>
+                                    <li><a class="dropdown-item" href="#">Hitachi</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     TV
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Sony</a></li>
+                                    <li><a class="dropdown-item" href="#">Vita</a></li>
+                                    <li><a class="dropdown-item" href="#">Xiomi/Mi</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">LED TV</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart TV</a></li>
+                                    <li><a class="dropdown-item" href="#">Android TV</a></li>
+                                    <li><a class="dropdown-item" href="#">4k TV</a></li>
+                                    <li><a class="dropdown-item" href="#">TV Stand</a></li>
+                                    <li><a class="dropdown-item" href="#">Wall Mount</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="latest-news.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Home Appliances
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="latest-news.html">Blog 1</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-2.html">Blog 2</a></li>
-                                    <li><a class="dropdown-item" href="latest-news-3.html">Blog Single</a></li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cooling & Healing
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Air Cooler</a></li>
+                                            <li><a class="dropdown-item" href="#">Air Cutter</a></li>
+                                            <li><a class="dropdown-item" href="#">Room Heater</a></li>
+                                            <li><a class="dropdown-item" href="#">Geyser</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Kitchen Appliances
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Doi maker</a></li>
+                                            <li><a class="dropdown-item" href="#">Blender</a></li>
+                                            <li><a class="dropdown-item" href="#">Electic Flask</a></li>
+                                            <li><a class="dropdown-item" href="#">Caccum Flask</a></li>
+                                            <li><a class="dropdown-item" href="#">Coffe Maker</a></li>
+                                            <li><a class="dropdown-item" href="#">Gas Stove</a></li>
+                                            <li><a class="dropdown-item" href="#">Pressure Cooker</a></li>
+                                            <li><a class="dropdown-item" href="#">Hand or Stand Mixer</a></li>
+                                            <li><a class="dropdown-item" href="#">Induction Cooker</a></li>
+                                            <li><a class="dropdown-item" href="#">Lunch Box</a></li>
+                                            <li><a class="dropdown-item" href="#">Meat Grinder</a></li>
+                                            <li><a class="dropdown-item" href="#">Mixer Grinder</a></li>
+                                            <li><a class="dropdown-item" href="#">Nonstick Cookwear</a></li>
+                                            <li><a class="dropdown-item" href="#">Rice Cooker</a></li>
+                                            <li><a class="dropdown-item" href="#">Roti maker</a></li>
+                                            <li><a class="dropdown-item" href="#">Curry Cooker</a></li>
+                                            <li><a class="dropdown-item" href="#">Sandwitch Maker</a></li>
+                                            <li><a class="dropdown-item" href="#">Toaster</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Beauty Tools
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Hair Driyer</a></li>
+                                            <li><a class="dropdown-item" href="#">Hair Straightener</a></li>
+                                            <li><a class="dropdown-item" href="#">Iron</a></li>
+                                            <li><a class="dropdown-item" href="#">Trimmer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropend">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Oven
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Electriv Oven</a></li>
+                                            <li><a class="dropdown-item" href="#">Microwave Oven</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Fan</a></li>
+                                    <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+                                    <li><a class="dropdown-item" href="#">Vaccum Cleaner</a></li>
+                                    <li><a class="dropdown-item" href="#">Akash DTH</a></li>
                                 </ul>
                             </li>
 
@@ -327,6 +933,17 @@
                             <li class="fs-5 fw-semibold color-blue">Email Us:</li>
                             <li class="text-white">info@smartview.com</li>
                         </ul>
+                        <div class="d-flex">
+                            <div class="icon">
+                                <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" aria-label="facebook"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" aria-label="facebook"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -341,7 +958,7 @@
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a class="text-white" href="#">Terms & Conditions</a>
-                    <a class="vr text-white mx-3"></a>
+                    <a class="vr text-white mx-3" href="#"></a>
                     <a class="text-white" href="#">Privacy Policy</a>
                 </div>
             </div>
